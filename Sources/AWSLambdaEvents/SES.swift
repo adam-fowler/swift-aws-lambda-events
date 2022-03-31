@@ -39,7 +39,7 @@ public struct SESEvent: Decodable {
         public let destination: [String]
         public let headers: [Header]
         public let headersTruncated: Bool
-        public let messageId: String?
+        public let messageId: String
         public let source: String
         @ISO8601WithFractionalSecondsCoding public var timestamp: Date
     }
